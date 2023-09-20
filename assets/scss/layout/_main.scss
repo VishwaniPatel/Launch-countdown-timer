@@ -16,7 +16,7 @@
 /* Backgrounds  */
 .main-container::before {
   content: " ";
-  background: url("./assets/images/bg-stars.svg");
+  background: url("../../../../launch-countdown-timer/assets/images/bg-stars.svg");
   position: absolute;
   background-size: contain;
   top: 0;
@@ -29,7 +29,7 @@
 .main-container::after {
   content: " ";
   position: absolute;
-  background: url("./assets/images/pattern-hills.svg");
+  background: url("../../../../launch-countdown-timer/assets/images/pattern-hills.svg");
   background-position: bottom center;
   background-size: contain;
   background-repeat: no-repeat;
