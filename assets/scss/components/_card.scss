@@ -1,0 +1,226 @@
+// Style of mobile screen size
+.countdown-timer {
+  display: flex;
+  text-align: center;
+  gap: 8px;
+  margin: 80px 0;
+}
+// card styling
+.cards {
+  font-size: 42px;
+  font-weight: 700;
+  display: flex;
+  flex-direction: column;
+  border-radius: 4px;
+  box-shadow: 0 4px 0 0 $dark-blue;
+  position: relative;
+}
+// card style when card flips
+.upper-card-flip {
+  position: absolute;
+  transform-origin: bottom;
+  transform: rotateX(0deg);
+  animation: flip-top 0.5s ease-in forwards;
+}
+.bottom-card-flip {
+  position: absolute;
+  bottom: 0;
+  transform-origin: top;
+  transform: rotateX(90deg);
+  animation: flip-bottom 0.5s ease-out 0.5s;
+}
+// time title headings
+.time-title {
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: $grayish-blue;
+  margin-top: 40px;
+}
+.upper-card,
+.bottom-card,
+.upper-card-flip,
+.bottom-card-flip {
+  height: 34px;
+  width: 70px;
+  padding: 6px 8px;
+  color: $soft-red;
+  text-align: center;
+  overflow: hidden;
+}
+.upper-card {
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  background-color: $upper-card-bg;
+  opacity: 0.5;
+}
+.upper-card-flip {
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  background-color: $upper-card-bg;
+}
+
+.cards {
+  position: relative;
+  overflow: hidden;
+  &::before,
+  &::after {
+    top: 30px;
+    position: absolute;
+    content: "";
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: $dark-blue;
+    z-index: 10;
+  }
+  &::before {
+    left: -4px;
+  }
+  &::after {
+    right: -4px;
+  }
+}
+.bottom-card,
+.bottom-card-flip {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  border-top: 1px solid $dark-blue;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  background-color: $bottom-card-bg;
+}
+@keyframes flip-top {
+  to {
+    transform: rotateX(90deg);
+  }
+}
+@keyframes flip-bottom {
+  to {
+    transform: rotateX(0deg);
+  }
+}
+
+// media queries
+
+@media (min-width: 375px) {
+  .countdown-timer {
+    gap: 12px;
+  }
+  .cards {
+    font-size: 45px;
+    box-shadow: 0 4px 0 0 $dark-blue;
+  }
+  .time-title {
+    font-size: 12px;
+    letter-spacing: 2px;
+  }
+  .upper-card,
+  .bottom-card,
+  .upper-card-flip,
+  .bottom-card-flip {
+    height: 40px;
+    width: 84px;
+    padding: 10px 12px;
+  }
+
+  .cards {
+    position: relative;
+    overflow: hidden;
+    &::before,
+    &::after {
+      top: 36px;
+      position: absolute;
+      content: "";
+      width: 8px;
+      height: 8px;
+    }
+    &::before {
+      left: -4px;
+    }
+    &::after {
+      right: -4px;
+    }
+  }
+}
+@media (min-width: 576px) {
+  .countdown-timer {
+    gap: 20px;
+  }
+  .cards {
+    font-size: 86px;
+    box-shadow: 0 12px 0 0 $dark-blue;
+  }
+  .time-title {
+    font-size: 20px;
+    letter-spacing: 8px;
+  }
+  .upper-card,
+  .bottom-card,
+  .upper-card-flip,
+  .bottom-card-flip {
+    height: 76px;
+    width: 160px;
+    padding: 20px 16px;
+  }
+
+  .cards {
+    position: relative;
+    overflow: hidden;
+    &::before,
+    &::after {
+      top: 70px;
+      position: absolute;
+      content: "";
+      width: 12px;
+      height: 12px;
+    }
+    &::before {
+      left: -5px;
+    }
+    &::after {
+      right: -5px;
+    }
+  }
+}
+@media (min-width: 768px) {
+  .countdown-timer {
+    gap: 24px;
+  }
+  .cards {
+    font-size: 90px;
+    box-shadow: 0 12px 0 0 $dark-blue;
+  }
+  .time-title {
+    font-size: 24px;
+    letter-spacing: 8px;
+  }
+  .upper-card,
+  .bottom-card,
+  .upper-card-flip,
+  .bottom-card-flip {
+    height: 80px;
+    width: 180px;
+    padding: 20px 16px;
+  }
+
+  .cards {
+    position: relative;
+    overflow: hidden;
+    &::before,
+    &::after {
+      top: 75px;
+      position: absolute;
+      content: "";
+      width: 12px;
+      height: 12px;
+    }
+    &::before {
+      left: -5px;
+    }
+    &::after {
+      right: -5px;
+    }
+  }
+}

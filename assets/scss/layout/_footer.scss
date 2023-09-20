@@ -1,0 +1,20 @@
+.footer {
+  width: 100%;
+  .attribution {
+    padding: 40px;
+    color: white;
+  }
+}
+.social-media {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 40px;
+  cursor: pointer;
+  li {
+    margin: 0 20px;
+    svg:hover path {
+      fill: $soft-red;
+    }
+  }
+}

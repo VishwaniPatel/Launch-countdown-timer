@@ -1,0 +1,23 @@
+// global styles
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body,
+html {
+  height: 100%;
+  width: 100%;
+}
+body {
+  font-family: $font-family-base;
+  // background-image: linear-gradient($body-bg, #2f2438);
+  background-image: linear-gradient(hsl(235, 16%, 14%), #2f2438);
+}
+ul,
+li {
+  all: unset;
+}
+.h-100 {
+  height: 100%;
+}
