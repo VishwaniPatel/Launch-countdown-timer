@@ -296,53 +296,6 @@ li {
   font-size: 14px;
 }
 
-@media (min-width: 425px) {
-  .main-container {
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-    width: 100%;
-  }
-  .container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-    width: 100%;
-  }
-  /* Backgrounds  */
-  .main-container::before {
-    content: " ";
-    background: url("../../../assets/images/bg-stars.svg");
-    position: absolute;
-    background-size: contain;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    z-index: -1;
-  }
-  .main-container::after {
-    content: " ";
-    position: absolute;
-    background: url("../../../assets/images/pattern-hills.svg");
-    background-position: bottom center;
-    background-size: contain;
-    background-repeat: no-repeat;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    z-index: -1;
-  }
-  .launch-title {
-    color: white;
-    font-size: 24px;
-    text-transform: uppercase;
-    letter-spacing: 6px;
-  }
-}
 .footer {
   width: 100%;
 }
