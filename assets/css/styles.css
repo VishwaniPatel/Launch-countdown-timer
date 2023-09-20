@@ -265,7 +265,7 @@ li {
 /* Backgrounds  */
 .main-container::before {
   content: " ";
-  background: url("../../../../launch-countdown-timer-main/assets/images/bg-stars.svg");
+  background: url("../../../../launch-countdown-timer/assets/images/bg-stars.svg");
   position: absolute;
   background-size: contain;
   top: 0;
@@ -278,7 +278,7 @@ li {
 .main-container::after {
   content: " ";
   position: absolute;
-  background: url("../../../../launch-countdown-timer-main/assets/images/pattern-hills.svg");
+  background: url("../../../../launch-countdown-timer/assets/images/pattern-hills.svg");
   background-position: bottom center;
   background-size: contain;
   background-repeat: no-repeat;
